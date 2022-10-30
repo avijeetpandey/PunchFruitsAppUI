@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct PunchFruitsAppUIApp: App {
+    @AppStorage("isOnboarding") var isOnboarding: Bool = true
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if isOnboarding {
+                OnboardingScreenView()
+            } else {
+                ContentView()
+            }
         }
     }
 }
