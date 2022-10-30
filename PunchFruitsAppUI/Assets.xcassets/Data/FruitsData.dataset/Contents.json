@@ -1,6 +1,7 @@
 {
-  "colors" : [
+  "data" : [
     {
+      "filename" : "FruitsData.txt",
       "idiom" : "universal"
     }
   ],
